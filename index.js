@@ -17,7 +17,7 @@ function run() {
       throw Error("version not found");
     }
 
-    core.setOutput("version", version);
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `version=${version}`);
   } catch (error) {
     core.setFailed(error.message);
   }
