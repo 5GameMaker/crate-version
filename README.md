@@ -10,7 +10,7 @@ This is a Github action, you can use it to extract your Rust crate version. Read
 ```yaml
 - name: Crate Version
   id: crate-version
-  uses: colathro/crate-version@1.0.0
+  uses: colathro/crate-version@2.0.0
   with:
     file: "./Cargo.toml"
 ```
