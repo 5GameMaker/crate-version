@@ -5,7 +5,7 @@ const toml = require("@iarna/toml");
 
 function run() {
   try {
-    const fileName = core.getInput("file") || "Cargo.json";
+    const fileName = core.getInput("file", { required: false }) || "Cargo.json";
     const filePath = path.join(process.env.GITHUB_WORKSPACE, fileName);
 
     let tomlContent = getTomlContent(filePath);
