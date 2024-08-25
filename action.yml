@@ -9,7 +9,7 @@ branding:
 inputs:
   file:
     description: "The relative path of toml file"
-    required: true
+    required: false
 
 outputs:
   version:
